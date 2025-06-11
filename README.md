@@ -1,20 +1,23 @@
-# 🧩 Full Stack App: .NET + React
+# 💼 Portfolio Personal - Next.js + Tailwind
 
-Aplicación full stack con backend en **ASP.NET Core** y frontend en **React**.
+Este es mi portfolio como Full Stack Developer, creado con **Next.js**, **Tailwind CSS** y **TypeScript**.
 
-## 🛠️ Tecnologías principales
+## ✨ Secciones previstas
 
-- Backend: .NET 7, C#, Entity Framework, SQL Server
-- Frontend: React, Axios, Material UI
-- Arquitectura: API REST, Inyección de Dependencias, Repositorio
+- Sobre mí
+- Proyectos
+- Habilidades
+- Contacto
 
-## 🎯 Funcionalidades previstas
+## 🛠️ Stack
 
-- Autenticación JWT
-- CRUD completo de entidad principal
-- Documentación con Swagger
-- Deploy: Render (API), Vercel (frontend)
+- Next.js 14
+- Tailwind CSS
+- TypeScript
+- Despliegue con Vercel
+
+## 🧱 Estructura base
+
+Página estática con navegación y contenido adaptable a futuros proyectos.
 
 ## 🔜 En desarrollo...
-
-Este proyecto está en etapa inicial. Próximamente más avances 🚧

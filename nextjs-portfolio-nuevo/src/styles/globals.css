@@ -1,0 +1,13 @@
+/* src/styles/globals.css o src/app/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+  /* Aplicamos el fondo degradado directamente con los nuevos colores */
+  background-image: linear-gradient(to bottom, #0A0A0A, #000000); /* dark-background a black-true */
+  background-color: #0A0A0A; /* Color de fallback */
+  color: #EFEFEF; /* Color de texto global 'text-light' */
+}
+

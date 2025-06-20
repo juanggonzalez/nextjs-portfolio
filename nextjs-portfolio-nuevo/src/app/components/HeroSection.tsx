@@ -85,15 +85,6 @@ export default function HeroSection() {
               </motion.button>
             </a>
           </motion.div>
-
-          <motion.div
-            variants={itemVariants}
-            className="absolute bottom-4 left-1/2 -translate-x-1/2 md:static md:translate-x-0 md:mt-16 text-brand-primary text-5xl cursor-pointer"
-            animate={{ y: [0, 10, 0] }}
-            transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
-          >
-            ↓
-          </motion.div>
         </div>
 
         <motion.div

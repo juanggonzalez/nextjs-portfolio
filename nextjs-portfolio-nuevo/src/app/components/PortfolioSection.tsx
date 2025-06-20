@@ -37,32 +37,32 @@ export default function PortfolioSection() {
       title: "Data Management API",
       category: "Backend Development",
       image: "https://placehold.co/400x300/0A0A0A/FFFFFF?text=Data+API",
-      description: "Construction of a robust RESTful API with Node.js for data management, including authentication and query optimization.",
+      description: "Construction of a robust RESTful API with Node.js for data management, including authentication and query optimization. (IN PROGRESS)",
     },
-    {
-      title: "Hybrid Mobile Application",
-      category: "Mobile App",
-      image: "https://placehold.co/400x300/0A0A0A/FFFFFF?text=Mobile+App",
-      description: "Design and development of a mobile application with React Native and Kotlin, connected to backend services for a fluid experience.",
-    },
-    {
-      title: "Enterprise Management System",
-      category: "Software Development",
-      image: "https://placehold.co/400x300/0A0A0A/FFFFFF?text=Enterprise+System",
-      description: "Implementation of an internal management system using C# and .NET, applying design patterns like Repository for improved maintainability.",
-    },
+    // {
+    //   title: "Hybrid Mobile Application",
+    //   category: "Mobile App",
+    //   image: "https://placehold.co/400x300/0A0A0A/FFFFFF?text=Mobile+App",
+    //   description: "Design and development of a mobile application with React Native and Kotlin, connected to backend services for a fluid experience.",
+    // },
+    // {
+    //   title: "Enterprise Management System",
+    //   category: "Software Development",
+    //   image: "https://placehold.co/400x300/0A0A0A/FFFFFF?text=Enterprise+System",
+    //   description: "Implementation of an internal management system using C# and .NET, applying design patterns like Repository for improved maintainability.",
+    // },
     {
       title: "Interactive Analytics Dashboard",
       category: "Frontend / Data Viz",
       image: "https://placehold.co/400x300/0A0A0A/FFFFFF?text=Analytics+Dashboard",
-      description: "Creation of an interactive dashboard in React.js for data visualization, enhancing business decision-making.",
+      description: "Creation of an interactive dashboard in React.js for data visualization, enhancing business decision-making. (IN PROGRESS)",
     },
-    {
-      title: "C# Test Automation Framework",
-      category: "Quality Assurance",
-      image: "https://placehold.co/400x300/0A0A0A/FFFFFF?text=Automated+Tests",
-      description: "Development of a test automation framework to ensure the quality and stability of web applications and APIs.",
-    },
+    // {
+    //   title: "C# Test Automation Framework",
+    //   category: "Quality Assurance",
+    //   image: "https://placehold.co/400x300/0A0A0A/FFFFFF?text=Automated+Tests",
+    //   description: "Development of a test automation framework to ensure the quality and stability of web applications and APIs.",
+    // },
   ];
 
 
@@ -108,16 +108,6 @@ export default function PortfolioSection() {
         ))}
       </div>
 
-      <motion.button
-        variants={itemVariants}
-        whileHover={{ scale: 1.07, boxShadow: glowPrimaryLgValue }}
-        initial={{ boxShadow: shadowNoneValue }} 
-        animate={{ boxShadow: shadowNoneValue }} 
-        whileTap={{ scale: 0.93 }}
-        className="bg-brand-primary text-brand-text-on-primary px-10 py-4 rounded shadow-none hover:brightness-110 transition-all duration-300 font-bold text-lg mt-16" 
-      >
-        View All Projects
-      </motion.button>
     </motion.section>
   );
 }

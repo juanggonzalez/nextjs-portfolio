@@ -38,10 +38,10 @@ export default function SkillsSection() {
   const skillsData = [
     { name: "ReactJS", percentage: 95 },
     { name: "JavaScript / TypeScript", percentage: 90 },
-    { name: "ASP.NET / C#", percentage: 85 },
-    { name: "Node.js", percentage: 80 },
-    { name: "SQL (SQL Server)", percentage: 85 },
     { name: "HTML / CSS / SASS", percentage: 90 },
+    { name: "ASP.NET / C#", percentage: 85 },
+    { name: "SQL (SQL Server)", percentage: 85 },
+    { name: "Node.js", percentage: 80 },
     { name: "Git / GitHub / AzureDevOps", percentage: 80 },
     { name: "Design Patterns", percentage: 80 },
     { name: "Testing (C#)", percentage: 65 },

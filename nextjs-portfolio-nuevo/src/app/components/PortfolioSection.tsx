@@ -32,6 +32,7 @@ export default function PortfolioSection() {
       category: "FullStack Web Development",
       image: "https://placehold.co/400x300/0A0A0A/FFFFFF?text=E-commerce+Platform",
       description: "Development of a scalable e-commerce solution using React.js for the frontend and ASP.NET with SQL Server for the backend.",
+      githubUrl: "https://github.com/juanggonzalez/fullstack-net-react/tree/main"
     },
     {
       title: "Data Management API",
@@ -90,20 +91,41 @@ export default function PortfolioSection() {
             variants={itemVariants}
             className="bg-dark-surface p-8 rounded-lg shadow-dark-card overflow-hidden border-2 border-transparent hover:border-brand-primary transition-all duration-300 cursor-pointer group transform hover:-translate-y-2"
           >
-            <div className="relative w-full h-64 overflow-hidden">
-              <Image
-                src={item.image}
-                alt={item.title}
-                fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                className="object-cover group-hover:scale-105 transition-transform duration-300 brightness-90"
-              />
-            </div>
-            <div className="p-6 text-center">
-              <h3 className="text-2xl font-bold mb-2 text-text-light">{item.title}</h3>
-              <p className="text-brand-primary text-sm uppercase font-semibold">{item.category}</p>
-              <p className="text-text-muted text-sm mt-2">{item.description}</p> 
-            </div>
+            {item.githubUrl ? (
+              <a href={item.githubUrl} target="_blank" rel="noopener noreferrer" className="block cursor-pointer">
+                <div className="relative w-full h-64 overflow-hidden">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-cover group-hover:scale-105 transition-transform duration-300 brightness-90"
+                  />
+                </div>
+                <div className="p-6 text-center">
+                  <h3 className="text-2xl font-bold mb-2 text-text-light">{item.title}</h3>
+                  <p className="text-brand-secondary text-sm font-semibold mb-4">{item.category}</p>
+                  <p className="text-text-medium leading-relaxed">{item.description}</p>
+                </div>
+              </a>
+            ) : (
+              <> {/* Fragmento para elementos sin enlace */}
+                <div className="relative w-full h-64 overflow-hidden">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-cover group-hover:scale-105 transition-transform duration-300 brightness-90"
+                  />
+                </div>
+                <div className="p-6 text-center">
+                  <h3 className="text-2xl font-bold mb-2 text-text-light">{item.title}</h3>
+                  <p className="text-brand-secondary text-sm font-semibold mb-4">{item.category}</p>
+                  <p className="text-text-medium leading-relaxed">{item.description}</p>
+                </div>
+              </>
+            )}
           </motion.div>
         ))}
       </div>

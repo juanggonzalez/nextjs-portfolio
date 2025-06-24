@@ -40,30 +40,12 @@ export default function PortfolioSection() {
       image: "https://placehold.co/400x300/0A0A0A/FFFFFF?text=Data+API",
       description: "Construction of a robust RESTful API with Node.js for data management, including authentication and query optimization. (IN PROGRESS)",
     },
-    // {
-    //   title: "Hybrid Mobile Application",
-    //   category: "Mobile App",
-    //   image: "https://placehold.co/400x300/0A0A0A/FFFFFF?text=Mobile+App",
-    //   description: "Design and development of a mobile application with React Native and Kotlin, connected to backend services for a fluid experience.",
-    // },
-    // {
-    //   title: "Enterprise Management System",
-    //   category: "Software Development",
-    //   image: "https://placehold.co/400x300/0A0A0A/FFFFFF?text=Enterprise+System",
-    //   description: "Implementation of an internal management system using C# and .NET, applying design patterns like Repository for improved maintainability.",
-    // },
     {
       title: "Interactive Analytics Dashboard",
       category: "Frontend / Data Viz",
       image: "https://placehold.co/400x300/0A0A0A/FFFFFF?text=Analytics+Dashboard",
       description: "Creation of an interactive dashboard in React.js for data visualization, enhancing business decision-making. (IN PROGRESS)",
     },
-    // {
-    //   title: "C# Test Automation Framework",
-    //   category: "Quality Assurance",
-    //   image: "https://placehold.co/400x300/0A0A0A/FFFFFF?text=Automated+Tests",
-    //   description: "Development of a test automation framework to ensure the quality and stability of web applications and APIs.",
-    // },
   ];
 
 
@@ -109,7 +91,7 @@ export default function PortfolioSection() {
                 </div>
               </a>
             ) : (
-              <> {/* Fragmento para elementos sin enlace */}
+              <> 
                 <div className="relative w-full h-64 overflow-hidden">
                   <Image
                     src={item.image}

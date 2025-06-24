@@ -65,11 +65,10 @@ export default function ServicesSection() {
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
     >
-      <motion.h2 variants={itemVariants} className="text-4xl md:text-5xl font-extrabold text-text-light mb-16 text-center drop-shadow-[0_0_10px_rgba(255,127,0,0.6)]"> {/* Adjusted shadow */}
+      <motion.h2 variants={itemVariants} className="text-4xl md:text-5xl font-extrabold text-text-light mb-16 text-center drop-shadow-[0_0_10px_rgba(255,127,0,0.6)]"> 
         My Services
       </motion.h2>
 
-      {/* Services card grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl w-full mb-20">
         {serviceCards.map((card, index) => (
           <motion.div
@@ -77,16 +76,14 @@ export default function ServicesSection() {
             variants={itemVariants}
             className="bg-dark-surface p-8 rounded-lg shadow-dark-card text-center border-2 border-transparent hover:border-brand-primary transition-all duration-300 transform hover:-translate-y-2"
           >
-            <div className="text-5xl mb-4 text-brand-primary">{card.icon}</div> {/* Orange icon */}
+            <div className="text-5xl mb-4 text-brand-primary">{card.icon}</div> 
             <h3 className="text-2xl font-bold mb-2 text-text-light">{card.title}</h3>
             <p className="text-text-muted">{card.description}</p>
           </motion.div>
         ))}
       </div>
 
-      {/* Statistics section */}
-      {/* Vibrant orange background for this section as in the image */}
-      <div className="border bg-brand-primary rounded-lg py-12 md:py-16 px-8 max-w-6xl w-full shadow-none"> {/* No shadow */}
+      <div className="border bg-brand-primary rounded-lg py-12 md:py-16 px-8 max-w-6xl w-full shadow-none">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           {stats.map((stat, index) => (
             <motion.div key={index} variants={itemVariants} className="flex flex-col items-center">
